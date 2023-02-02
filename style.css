@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  font-family: 'Poppins', 'Montserrat', 'Times New Roman';
+  --black: #0000;
+  --color-1: #f6fff8;
+  --color-2: #eaf4f4;
+  --color-3: #cce3de;
+  --color-4: #a4c3b2;
+  --color-5: #6b9080;
+}
+
+/* Header  */
+#header {
+  height: 65px;
+}
+
+.header__navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0px;
+  gap: 15px;
+}
+
+.header__navbar__list {
+  display: flex;
+  gap: 15px;
+  text-decoration: none;
+  list-style-type: none;
+  color: var(--black);
+}
+
+/* Main section  */
+.main__hero {
+  align-items: center;
+  background: url(./assets/img-2.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 55px);
+  width: 100%;
+}
+
+.main__hero__presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 48px;
+  padding: 200px 210px;
+}
+
+.main__hero__presentation h2,
+h5 {
+  background-color: var(--color-2);
+  padding: 0px 4px;
+}
+
+.main__hero__presentation h6 {
+  margin-bottom: 8px;
+  padding: 0px 4px;
+  margin-top: 30px;
+  font-size: 24px;
+  color: var(--color-1);
+  background-color: var(--color-5);
+}
+
+/* Section of products  */
+
+.main__plant__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+#main__plant__products {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 0px;
+  gap: 25px;
+}
+
+#main__plant__products h2 {
+  text-align: center;
+}
+
+.main__plant_product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 12px;
+  gap: 30px;
+  background-color: var(--color-3);
+}
+
+.main__plant__products__img {
+  max-width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Find Section  */
+
+.main__find {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./assets/img-6-find.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+}
+
+.main_find_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 15px;
+  background-color: var(--color-2);
+  max-width: 500px;
+  text-align: center;
+}
+
+.main_find_card p span {
+  text-decoration: underline;
+}
+
+/* About Us Section  */
+main {
+  background-color: var(--color-1);
+}
+#main__about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 36px;
+  background-color: var(--color-1);
+}
+
+.main__about__us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+}
+
+.about__us__p1 {
+  padding: 12px 24px;
+  text-align: center;
+  max-width: 50%;
+  background-color: var(--color-2);
+}
+
+.about__us__p2 {
+  text-align: center;
+  max-width: 80%;
+}
+
+.about__us__p2 span {
+  color: var(--color-1);
+  background-color: var(--color-5);
+}
