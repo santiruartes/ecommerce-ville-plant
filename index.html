@@ -22,7 +22,7 @@
           <li><a href="#main__plant__products">Productos</a></li>
           <li><a href="#main__about">Nosotros</a></li>
           <li><a href="#">Blog</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#main__contact">Contacto</a></li>
         </ul>
         <ul>
           <div class="header__navbar__cart"></div>
@@ -70,7 +70,7 @@
         </div>
       </section>
       <section class="main__find">
-        <div class="main_find_card">
+        <div class="main__find__card">
           <h3>14 dias de garantia</h3>
           <p>
             Te garantizamos plantas saludables cuando las recibas. Si llegaron
@@ -91,13 +91,81 @@
             especiales. Las sierras de nuestra provincia nos inspiran a
             <span
               >brindar un poco de nuestra vegetación a lo largo y ancho de
-              nuestro pais</span
-            >, esto significa para nosotros poder dar un poco de color, un poco
-            de vida y un poco de sierras en tu espacio diario.
+              nuestro pais,</span
+            >
+            esto significa para nosotros poder dar un poco de color, un poco de
+            vida y un poco de sierras en tu espacio diario.
           </p>
+        </div>
+        <img
+          class="img-sierras"
+          src="./assets/sierras-cba.jpg"
+          alt="sierras córdobesas con un gran lago en frente"
+        />
+      </section>
+      <section id="main__contact">
+        <h2>Contacto</h2>
+        <div class="main__contact__container">
+          <p>
+            ¿Dudas sobre ciudados? ¿Problemas para comprar? No te preocupes,
+            somos un equipo comprometido, obtendras una respuesta en un lapso de
+            24 horas hábiles.
+          </p>
+        </div>
+        <div class="main__contact__form">
+          <form>
+            <label for="nombre"></label>
+            <input type="text" id="nombre" placeholder="Nombre" />
+
+            <label for="correo"></label>
+            <input type="email" id="correo" placeholder="Email" />
+
+            <label for="texto"></label>
+            <textarea
+              id="texto"
+              cols="60"
+              rows="12"
+              placeholder="Escriba su mensaje aqui"
+            ></textarea>
+
+            <input id="btn-submit" type="submit" id="Enviar" />
+          </form>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer__container">
+        <div class="footer__-principal-content">
+          <h2 class="header__navbar__tittle">VILLE PLANT</h2>
+          <h4>Dale color a tu inbox!</h4>
+          <p>Obtene un 15% de descuento suscribiendote a nuestro newsletter.</p>
+          <div>
+            <input
+              id="input__email__footer"
+              type="email"
+              placeholder="Ingrese su email"
+            />
+
+            <button type="submit" id="input__btn__footer">Enviar</button>
+          </div>
+        </div>
+        <div class="footer__list">
+          <h3 class="footer__tittle">Enlaces de utilidad</h3>
+          <ul>
+            <li>Envios</li>
+            <li>Problemas comunes</li>
+            <li>FAQs</li>
+          </ul>
+        </div>
+
+        <div class="footer__list__recomendations">
+          <h3 class="footer__tittle">Información</h3>
+          <ul>
+            <li>El origen de nuestros productos</li>
+            <li>La importancia de del verde en un espacio</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
