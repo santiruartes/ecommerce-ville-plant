@@ -6,6 +6,8 @@
   text-decoration: none;
   list-style-type: none;
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 :root {
@@ -89,6 +91,7 @@ h5 {
 
 #main__plant__products h2 {
   text-align: center;
+  font-weight: 600;
 }
 
 .main__plant_product {
@@ -132,6 +135,7 @@ h5 {
 }
 
 .main__find__card h3 {
+  font-weight: 600;
   font-size: 28px;
 }
 .main__find__card p span {
@@ -144,7 +148,6 @@ main {
 }
 #main__about {
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   padding: 36px 0px;
   background-color: var(--color-1);
@@ -159,6 +162,7 @@ main {
 }
 
 .main__about__us h2 {
+  font-weight: 600;
   font-size: 32px;
 }
 
@@ -239,6 +243,8 @@ textarea {
   background-color: var(--color-2);
 }
 
+/* Footer Section  */
+
 footer {
   display: flex;
   align-items: center;
@@ -260,7 +266,7 @@ footer {
 }
 
 .footer__tittle {
-  text-decoration: underline 2px;
+  padding-bottom: 5px;
 }
 
 #input__email__footer {
