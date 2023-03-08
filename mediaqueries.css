@@ -1,0 +1,35 @@
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header__navbar__tittle {
+    padding: 8px;
+  }
+  .header__navbar ul {
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: calc(100vh - 65px);
+    padding: 20px 0px;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    font-size: 18px;
+  }
+
+  .header__navbar label {
+    display: block;
+  }
+
+  #toggle-menu:checked ~ .header__navbar__list {
+    display: flex;
+  }
+}
+
+@media (max-width: 320px) {
+}

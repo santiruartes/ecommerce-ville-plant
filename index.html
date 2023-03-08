@@ -11,36 +11,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
     <title>Integrador NUCBA - JS</title>
   </head>
   <body>
     <header id="header">
       <nav class="header__navbar">
         <h2 class="header__navbar__tittle">VILLE PLANT</h2>
+        <label for="toggle-menu"><i class="fa-solid fa-bars"></i></label>
+        <input type="checkbox" id="toggle-menu" />
         <ul class="header__navbar__list">
           <li><a href="#main__plant__products">Productos</a></li>
           <li><a href="#main__about">Nosotros</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#main__contact">Contacto</a></li>
-        </ul>
-        <ul class="header__navbar__list">
-          <div class="header__navbar__cart">
-            <a href="#"
-              ><img
-                src="./assets/icons-svg/account_circle_black_24dp.svg"
-                alt=""
-            /></a>
+          <div id="header__cart">
+            <i class="fa-solid fa-cart-shopping"></i>
           </div>
-          <div class="header__navbar__session">
-            <li class="header__navbar__list">
-              <a href=""
-                ><img
-                  src="./assets/icons-svg/shopping_cart_black_24dp.svg"
-                  alt=""
-              /></a>
-            </li>
-          </div>
+          <a href="">
+            <i class="fa-solid fa-user"></i>
+          </a>
         </ul>
       </nav>
     </header>

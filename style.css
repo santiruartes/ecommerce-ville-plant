@@ -12,7 +12,7 @@
 
 :root {
   font-family: 'Poppins', 'Montserrat', 'Times New Roman';
-  --black: #0000;
+  --black: #000000;
   --color-1: #f6fff8;
   --color-2: #eaf4f4;
   --color-3: #cce3de;
@@ -27,17 +27,26 @@
 
 .header__navbar {
   display: flex;
-  justify-content: space-around;
-  padding: 20px 0px;
+  justify-content: space-between;
+  padding: 20px 100px;
   gap: 15px;
+  list-style-type: none;
+}
+
+/* Toggle */
+.header__navbar label {
+  font-size: 36px;
+  display: none;
+}
+
+.header__navbar input {
+  display: none;
 }
 
 .header__navbar__list {
   display: flex;
-  gap: 15px;
-  text-decoration: none;
-  list-style-type: none;
-  color: var(--black);
+  gap: 25px;
+  color: black;
 }
 
 /* Main section  */
@@ -226,7 +235,7 @@ main {
 
 .main__contact__form form input,
 textarea {
-  font-family: Poppins;
+  font-family: 'Poppins';
   width: 300px;
   padding: 5px;
   padding-left: 6px;
@@ -281,7 +290,7 @@ footer {
 
 #input__btn__footer {
   cursor: pointer;
-  font-family: Poppins;
+  font-family: 'Poppins';
   border: none;
   border-radius: 3px;
   width: 50px;
