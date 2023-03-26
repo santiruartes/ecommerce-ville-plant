@@ -118,6 +118,22 @@ h5 {
   object-fit: cover;
 }
 
+.categories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.category {
+  background: var(--color-3);
+  border: none;
+  padding: 10px 15px;
+  color: var(--black);
+  cursor: pointer;
+  font-weight: 600;
+}
+
 /* Find Section  */
 
 .main__find {
