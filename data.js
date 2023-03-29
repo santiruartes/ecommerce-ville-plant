@@ -65,3 +65,19 @@ const productList = [
     },
 
 ]   
+
+const splitProducts = (size) => {
+    let divideProducts = [];
+
+    for (let i = 0; i < productList.length; i += size) {
+        divideProducts.push(productList.slice(i, i + size))
+    }
+
+    return divideProducts;
+};
+
+const productsController = {
+    divideProducts: splitProducts(3),
+    nextProductsIndex: 1,
+    productsLimit: splitProducts(3).length,
+};

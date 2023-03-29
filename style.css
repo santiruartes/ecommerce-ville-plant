@@ -82,6 +82,14 @@ h5 {
   background-color: var(--color-5);
 }
 
+/* Card Products */
+.card__container {
+  padding: 20px 40px;
+}
+
+.product__container {
+  display: flex;
+}
 /* Section of products  */
 
 .main__plant__container {
