@@ -83,8 +83,34 @@ h5 {
 }
 
 /* Card Products */
+
+.product__container {
+  gap: 30px;
+  background-color: var(--color-3);
+  padding: 80px 40px;
+}
+
 .card__container {
-  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px 40px;
+  background-color: var(--color-5);
+}
+
+.card__container img {
+  max-width: 500px;
+  max-height: 300px;
+}
+
+.card__info button {
+  text-align: center;
+  padding: 4px 8px;
+  font-weight: 600;
+  background-color: var(--color-3);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 .product__container {

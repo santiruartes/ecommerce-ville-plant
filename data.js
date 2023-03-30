@@ -1,66 +1,66 @@
 const productList = [
     {
         id: 1,
-        name: "planta-1",
+        name: "Hoya carnosa",
         category: "inside",
         cost: 5,
-        cardImg: "./asssets/products/inside-product-1.jpg",
+        cardImg: "./assets/products/inside-product-1.jpg",
 
     },
     {
         id: 2,
-        name: "planta-2",
+        name: "Aloe vera",
         category: "inside",
         cost: 7,
-        cardImg: "./asssets/products/inside-product-2.jpg",
+        cardImg: "./assets/products/inside-product-2.jpg",
 
     },
     {
         id: 3,
-        name: "planta-3",
+        name: "Echeveria",
         category: "inside",
         cost: 7,
-        cardImg: "./asssets/products/inside-product-3.jpg",
+        cardImg: "./assets/products/inside-product-3.jpg",
 
     },
     {
         id: 4,
-        name: "planta-4",
+        name: "Tradescantia zebrina",
         category: "outside",
         cost: 8,
-        cardImg: "./asssets/products/outside-product-1.jpg",
+        cardImg: "./assets/products/outside-product-1.jpg",
 
     },
     {
         id: 5,
-        name: "planta-5",
+        name: "Pelargonium crispum",
         category: "outside",
         cost: 10,
-        cardImg: "./asssets/products/outside-product-2.jpg",
+        cardImg: "./assets/products/outside-product-2.jpg",
 
     },
     {
         id: 6,
-        name: "planta-6",
+        name: "Tagetes erecta",
         category: "pet-friendly",
         cost: 9.50,
-        cardImg: "./asssets/products/pet-friendly-product-1.jpg",
+        cardImg: "./assets/products/pet-friendly-product-1.jpg",
 
     },
     {
         id: 7,
-        name: "planta-7",
+        name: "Aster",
         category: "pet-friendly",
         cost: 9.50,
-        cardImg: "./asssets/products/pet-friendly-product-2.jpg",
+        cardImg: "./assets/products/pet-friendly-product-2.jpg",
 
     },
     {
         id: 8,
-        name: "planta-8",
+        name: "Callistephus",
         category: "pet-friendly",
         cost: 9.50,
-        cardImg: "./asssets/products/pet-friendly-product-3.jpg",
+        cardImg: "./assets/products/pet-friendly-product-3.jpg",
 
     },
 

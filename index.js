@@ -8,7 +8,8 @@ const saveLocalStorage = (cartList) => {
 
 const renderProduct = (product) => {
     const {id, name, cost, cardImg} = product
-    return `<div class="card__container">
+    return `
+  <div class="card__container">
     <img src="${cardImg}" alt="${name}" />
     <div class="card__info">
       <div class="product-top">
@@ -16,8 +17,8 @@ const renderProduct = (product) => {
       </div>
       <div class="product-bot">
         <div>
+          <span>$${cost}<span/>
           <p>
-            $${cost}
             Descripción: Estos productos son de alta calidad, producidos en
             ambientes ciudados, con abono orgánico
           </p>
@@ -30,7 +31,7 @@ const renderProduct = (product) => {
         data-cost="${cost}"
         data-img="${cardImg}"
       >
-        Add
+        Comprar
       </button>
     </div>
   </div>
