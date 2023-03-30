@@ -12,17 +12,17 @@ const renderProduct = (product) => {
   <div class="card__container">
     <img src="${cardImg}" alt="${name}" />
     <div class="card__info">
-      <div class="product-top">
+      <div class="product__top">
         <h3>${name}</h3>
       </div>
-      <div class="product-bot">
-        <div>
-          <span>$${cost}<span/>
+      <div class="product__mid"> 
+      <span>$${cost}<span/>
+      </div>
+      <div class="product__bot">
           <p>
-            Descripción: Estos productos son de alta calidad, producidos en
-            ambientes ciudados, con abono orgánico
+            Estos productos son de alta calidad, producidos en
+            ambientes ciudados, con abono orgánico.
           </p>
-        </div>
       </div>
       <button
         class="add-btn"

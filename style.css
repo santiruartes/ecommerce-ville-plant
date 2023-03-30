@@ -85,6 +85,7 @@ h5 {
 /* Card Products */
 
 .product__container {
+  display: flex;
   gap: 30px;
   background-color: var(--color-3);
   padding: 80px 40px;
@@ -113,9 +114,24 @@ h5 {
   cursor: pointer;
 }
 
-.product__container {
-  display: flex;
+.product__top {
+  -webkit-text-stroke: 0.9px var(--black);
+  font-size: 20px;
+  color: var(--color-1);
 }
+
+.product__mid {
+  color: var(--color-1);
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.product__bot {
+  font-size: 16px;
+  color: var(--color-1);
+  padding: 8px 0px;
+}
+
 /* Section of products  */
 
 .main__plant__container {
