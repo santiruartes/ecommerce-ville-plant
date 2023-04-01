@@ -1,4 +1,7 @@
 const products = document.querySelector(".product__container")
+const btnShowMore = document.querySelector(".btn-show-more")
+const categories = document.querySelector(".categories")
+const categoryList = document.querySelectorAll(".category")
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -57,8 +60,52 @@ const renderProducts = (index = 0, category = undefined) => {
     renderFilterProducts(category);
 };
 
+const StatusOfBtnShowMore = (category) => {
+  if (!category) {
+    btnShowMore.classList.remove("hidden");
+    return
+  }
+  btnShowMore.classList.add("hidden");
+};
+
+
+const changeBtnState = (selectedCategory) => {
+  const categories = [...categoryList];
+  categories.forEach( (categoryBtn) => {
+    if(categoryBtn.dataset.category !== selectedCategory) {
+      categoryBtn.classList.remove("active");
+      return;
+    }
+    categoryBtn.classList.add("active");
+  });
+};
+
+
+const changeFilterState = (e) => {
+    const selectedCategory = e.target.dataset.category
+    changeBtnState(selectedCategory);
+    StatusOfBtnShowMore(selectedCategory);
+}
+
+const applyFilter = (e) => {
+    if (!e.target.classList.contains("category")) {
+      return
+    } else {
+      changeFilterState(e)
+    }
+    if (!e.target.dataset.category) {
+      products.innerHTML = "";
+      renderProducts();
+    } else {
+      renderProducts(0, e.target.dataset.category);
+      productsController.nextProductsIndex = 1;
+    }
+};
+
+
 const init = () => {
     renderProducts();
+    categories.addEventListener("click", applyFilter);
 };
 
 init();

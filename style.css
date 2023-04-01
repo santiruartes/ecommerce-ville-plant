@@ -83,11 +83,18 @@ h5 {
 }
 
 /* Card Products */
+#plant__products__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--color-3);
+  padding: 40px 0px;
+}
 
 .product__container {
   display: flex;
   gap: 30px;
-  background-color: var(--color-3);
   padding: 80px 40px;
 }
 
@@ -175,13 +182,23 @@ h5 {
   gap: 15px;
 }
 
-.category {
-  background: var(--color-3);
+.category,
+.btn-show-more {
+  background: var(--color-4);
   border: none;
   padding: 10px 15px;
   color: var(--black);
   cursor: pointer;
   font-weight: 600;
+  border-radius: 10px;
+}
+
+.category {
+  border: 1px solid var(--color-2);
+}
+
+.btn-show-more {
+  border: 1px solid var(--color-5);
 }
 
 /* Find Section  */
