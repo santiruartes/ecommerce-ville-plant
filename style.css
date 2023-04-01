@@ -101,6 +101,8 @@ h5 {
 .card__container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 15px;
   padding: 30px 40px;
   background-color: var(--color-5);

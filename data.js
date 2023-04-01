@@ -2,7 +2,7 @@ const productList = [
     {
         id: 1,
         name: "Hoya carnosa",
-        category: "inside",
+        category: "interior",
         cost: 5,
         cardImg: "./assets/products/inside-product-1.jpg",
 
@@ -10,7 +10,7 @@ const productList = [
     {
         id: 2,
         name: "Aloe vera",
-        category: "inside",
+        category: "interior",
         cost: 7,
         cardImg: "./assets/products/inside-product-2.jpg",
 
@@ -18,7 +18,7 @@ const productList = [
     {
         id: 3,
         name: "Echeveria",
-        category: "inside",
+        category: "interior",
         cost: 7,
         cardImg: "./assets/products/inside-product-3.jpg",
 
@@ -26,7 +26,7 @@ const productList = [
     {
         id: 4,
         name: "Tradescantia zebrina",
-        category: "outside",
+        category: "exterior",
         cost: 8,
         cardImg: "./assets/products/outside-product-1.jpg",
 
@@ -34,7 +34,7 @@ const productList = [
     {
         id: 5,
         name: "Pelargonium crispum",
-        category: "outside",
+        category: "exterior",
         cost: 10,
         cardImg: "./assets/products/outside-product-2.jpg",
 
