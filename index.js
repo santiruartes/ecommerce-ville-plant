@@ -1,8 +1,11 @@
-const products = document.querySelector(".product__container")
+import { retrieveProducts, getListLength, getProductsByCategory } from "./data"
+import { cardAmount } from "./constants"
+const productsTag = document.querySelector(".product__container")
 const btnShowMore = document.querySelector(".btn-show-more")
 const categories = document.querySelector(".categories")
 const categoryList = document.querySelectorAll(".category")
-
+const barsBtn = document.querySelector(".menu-label")
+const barsMenu = document.querySelector(".header__navbar__list")
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 const saveLocalStorage = (cartList) => {
@@ -10,7 +13,7 @@ const saveLocalStorage = (cartList) => {
 };
 
 const renderProduct = (product) => {
-    const {id, name, cost, cardImg} = product
+    const { id, name, cost, cardImg } = product
     return `
   <div class="card__container">
     <img src="${cardImg}" alt="${name}" />
@@ -41,23 +44,18 @@ const renderProduct = (product) => {
     `
 }
 
-const renderDividedProducts = (index = 0) => {
-    products.innerHTML += productsController.divideProducts[index].map(renderProduct).join("");
-};
-
 const renderFilterProducts = (category) => {
     const productData = productList.filter((product) => {
         return product.category === category;
     })
-    products.innerHTML = productData.map(renderProduct).join("")
+    productsTag.innerHTML = productData.map(renderProduct).join("")
 };
 
-const renderProducts = (index = 0, category = undefined) => {
-    if (!category) {
-        renderDividedProducts(index);
-        return;
-    }
-    renderFilterProducts(category);
+const renderProducts = (products = []) => {
+  products.forEach((product) => {
+    const productHTML = renderProduct(product);
+    productsTag.innerHTML += productHTML;
+  });
 };
 
 const StatusOfBtnShowMore = (category) => {
@@ -81,31 +79,48 @@ const changeBtnState = (selectedCategory) => {
 };
 
 
-const changeFilterState = (e) => {
-    const selectedCategory = e.target.dataset.category
-    changeBtnState(selectedCategory);
-    StatusOfBtnShowMore(selectedCategory);
+const removeProducts = () => {
+  productsTag.innerHTML = "";
 }
 
 const applyFilter = (e) => {
-    if (!e.target.classList.contains("category")) {
-      return
-    } else {
-      changeFilterState(e)
-    }
-    if (!e.target.dataset.category) {
-      products.innerHTML = "";
-      renderProducts();
-    } else {
-      renderProducts(0, e.target.dataset.category);
-      productsController.nextProductsIndex = 1;
-    }
+  if (!e.target.classList.contains("category")) {
+    return;
+  }
+
+  const category = e.target.dataset.category;
+  if (!category) {
+    const initialProducts = retrieveProducts(0, cardAmount);
+    console.log({initialProducts})
+    removeProducts();
+    renderProducts(initialProducts);
+    return;
+  }
+  const filteredProducts = getProductsByCategory(category);
+  removeProducts();
+  renderProducts(filteredProducts);
 };
 
+const renderMoreCards = () => {
+  const currentCardsAmount = productsTag.children.length;
+  const nextProducts = retrieveProducts(currentCardsAmount, currentCardsAmount + cardAmount);
+  renderProducts(nextProducts);
+
+  if(currentCardsAmount + cardAmount >= getListLength()) {
+    btnShowMore.classList.add("hidden");
+  }
+}
+
+const toggleMenu = () => {
+  barsMenu.classList.toggle("open-menu");
+}
 
 const init = () => {
-    renderProducts();
-    categories.addEventListener("click", applyFilter);
+  const initialProducts = retrieveProducts(0, cardAmount);
+  renderProducts(initialProducts);
+  categories.addEventListener("click", applyFilter);
+  btnShowMore.addEventListener("click", () => renderMoreCards());
+  barsBtn.addEventListener("click", toggleMenu);
 };
 
 init();

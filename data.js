@@ -66,18 +66,14 @@ const productList = [
 
 ]   
 
-const splitProducts = (size) => {
-    let divideProducts = [];
+export const retrieveProducts = (startIndex, lastIndex) => {
+    return productList.slice(startIndex, lastIndex);
+}
 
-    for (let i = 0; i < productList.length; i += size) {
-        divideProducts.push(productList.slice(i, i + size))
-    }
+export const getListLength = () => productList.length;
 
-    return divideProducts;
-};
-
-const productsController = {
-    divideProducts: splitProducts(3),
-    nextProductsIndex: 1,
-    productsLimit: splitProducts(3).length,
-};
+export const getProductsByCategory = (category) => {
+    return productList.filter((product) => {
+        return product.category === category;
+    })
+}
