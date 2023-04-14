@@ -91,7 +91,6 @@ const applyFilter = (e) => {
   const category = e.target.dataset.category;
   if (!category) {
     const initialProducts = retrieveProducts(0, cardAmount);
-    console.log({initialProducts})
     removeProducts();
     renderProducts(initialProducts);
     return;
