@@ -40,6 +40,113 @@
     0.7px 26.7px 36.1px -1px hsl(var(--shadow-color) / 0.09);
 }
 
+/* Página de registro/login */
+#login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(./assets/img-3.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.login__cont,
+.register__section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 20px;
+  border-radius: 15px;
+  width: 600px;
+  height: 400px;
+  background: rgba(241, 241, 241, 0.8);
+  box-shadow: var(--shadow-elevation-high);
+}
+
+.login__cont h2 {
+  text-align: center;
+  color: var(--black);
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.login__back,
+.register__back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--color-1);
+  font-size: 12px;
+  font-weight: 500;
+  width: 10%;
+  background-color: var(--color-5);
+  border-radius: 5px;
+}
+
+.login__send,
+.register__send {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-1);
+  font-size: 14px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: var(--color-5);
+  height: 10%;
+  padding: 15px;
+}
+
+.login__cont input,
+.register__section input {
+  font-family: Poppins;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 14px;
+  height: 35px;
+}
+
+#register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(./assets/img-3.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.register__section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 600px;
+  height: 400px;
+  gap: 15px;
+  border-radius: 15px;
+  background: rgba(241, 241, 241, 0.8);
+}
+
+.register__section h2 {
+  text-align: center;
+  color: var(--btn-black);
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.register__section p {
+  text-align: center;
+  color: var(--btn-black);
+  font-size: 16px;
+}
+
 /* Header  */
 #header {
   height: 65px;
