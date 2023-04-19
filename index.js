@@ -44,37 +44,11 @@ const renderProduct = (product) => {
     `
 }
 
-const renderFilterProducts = (category) => {
-    const productData = productList.filter((product) => {
-        return product.category === category;
-    })
-    productsTag.innerHTML = productData.map(renderProduct).join("")
-};
 
 const renderProducts = (products = []) => {
   products.forEach((product) => {
     const productHTML = renderProduct(product);
     productsTag.innerHTML += productHTML;
-  });
-};
-
-const StatusOfBtnShowMore = (category) => {
-  if (!category) {
-    btnShowMore.classList.remove("hidden");
-    return
-  }
-  btnShowMore.classList.add("hidden");
-};
-
-
-const changeBtnState = (selectedCategory) => {
-  const categories = [...categoryList];
-  categories.forEach( (categoryBtn) => {
-    if(categoryBtn.dataset.category !== selectedCategory) {
-      categoryBtn.classList.remove("active");
-      return;
-    }
-    categoryBtn.classList.add("active");
   });
 };
 
@@ -112,7 +86,10 @@ const renderMoreCards = () => {
 
 const toggleMenu = () => {
   barsMenu.classList.toggle("open-menu");
+  
 }
+
+
 
 const init = () => {
   const initialProducts = retrieveProducts(0, cardAmount);
