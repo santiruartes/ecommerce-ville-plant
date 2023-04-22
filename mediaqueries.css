@@ -47,6 +47,7 @@
 
   #main__about {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     gap: 30px;
     padding: 20px 0px;

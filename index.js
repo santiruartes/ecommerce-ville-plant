@@ -1,11 +1,13 @@
 import { retrieveProducts, getListLength, getProductsByCategory } from "./data"
 import { cardAmount } from "./constants"
-const productsTag = document.querySelector(".product__container")
-const btnShowMore = document.querySelector(".btn-show-more")
-const categories = document.querySelector(".categories")
-const categoryList = document.querySelectorAll(".category")
-const barsBtn = document.querySelector(".menu-label")
-const barsMenu = document.querySelector(".header__navbar__list")
+const productsTag = document.querySelector(".product__container");
+const btnShowMore = document.querySelector(".btn-show-more");
+const categories = document.querySelector(".categories");
+const categoryList = document.querySelectorAll(".category");
+const barsBtn = document.querySelector(".menu-label");
+const barsMenu = document.querySelector(".header__navbar__list");
+
+
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 const saveLocalStorage = (cartList) => {
