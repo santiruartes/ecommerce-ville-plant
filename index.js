@@ -115,12 +115,14 @@ const closeOnClick = (e) => {
 };
 
 const closeOnScroll = () => {
-  if (!barsMenu.classList.contains("open.menu") && !cartMenu.classList.contains("open.cart")) {
-      return
+  if (
+    !barsMenu.classList.contains("open.menu") && 
+    !cartMenu.classList.contains("open.cart")
+    ) {
+      return;
     }
-
     barsMenu.classList.remove("open-menu");
-    cartMenu.classList.remove("open-cart")
+    cartMenu.classList.remove("open-cart");
     overlay.classList.remove("show-overlay");
 };
 
