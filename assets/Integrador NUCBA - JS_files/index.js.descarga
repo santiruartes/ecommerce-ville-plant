@@ -1,5 +1,5 @@
-import { retrieveProducts, getListLength, getProductsByCategory } from "./data"
-import { cardAmount } from "./constants"
+import { retrieveProducts, getListLength, getProductsByCategory } from "/data.js"
+import { cardAmount } from "/constants.js"
 const productsTag = document.querySelector(".product__container");
 const btnShowMore = document.querySelector(".btn-show-more");
 const categories = document.querySelector(".categories");
