@@ -116,8 +116,8 @@ const closeOnClick = (e) => {
 
 const closeOnScroll = () => {
   if (
-    !barsMenu.classList.contains("open.menu") && 
-    !cartMenu.classList.contains("open.cart")
+      !barsMenu.classList.contains("open-menu") && 
+      !cartMenu.classList.contains("open-cart")
     ) {
       return;
     }
@@ -126,15 +126,22 @@ const closeOnScroll = () => {
     overlay.classList.remove("show-overlay");
 };
 
+const closeOnOverlayClick = () => {
+    barsMenu.classList.remove("open-menu");
+    cartMenu.classList.remove("open-cart");
+    overlay.classList.remove("show-overlay");
+}
+
 const init = () => {
   const initialProducts = retrieveProducts(0, cardAmount);
   renderProducts(initialProducts);
   categories.addEventListener("click", applyFilter);
-  btnShowMore.addEventListener("click", () => renderMoreCards());
+  btnShowMore.addEventListener("click", renderMoreCards);
   barsBtn.addEventListener("click", toggleMenu);
   cartBtn.addEventListener("click", toggleCart);
   barsMenu.addEventListener("click", closeOnClick);
   window.addEventListener("scroll", closeOnScroll);
+  overlay.addEventListener("click", closeOnOverlayClick);
 };
 
 init();
