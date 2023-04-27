@@ -259,6 +259,7 @@ h5 {
 
 .product__container {
   display: flex;
+  justify-content: center;
   gap: 30px;
   padding: 80px 40px;
   max-width: 100%;
@@ -273,7 +274,7 @@ h5 {
   gap: 15px;
   padding: 30px 40px;
   background-color: var(--color-5);
-  max-width: 30%;
+  max-width: 450px;
   border-radius: 8px;
   box-shadow: var(--shadow-elevation-medium);
 }
