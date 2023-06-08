@@ -130,7 +130,7 @@ const closeOnOverlayClick = () => {
     barsMenu.classList.remove("open-menu");
     cartMenu.classList.remove("open-cart");
     overlay.classList.remove("show-overlay");
-}
+};
 
 const init = () => {
   const initialProducts = retrieveProducts(0, cardAmount);
