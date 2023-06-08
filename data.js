@@ -4,7 +4,7 @@ const productList = [
         name: "Hoya carnosa",
         category: "interior",
         cost: 5,
-        cardImg: "./assets/products/inside-product-1.jpg",
+        cardImg: "assets/products/inside-product-1.jpg",
 
     },
     {
@@ -12,7 +12,7 @@ const productList = [
         name: "Aloe vera",
         category: "interior",
         cost: 7,
-        cardImg: "./assets/products/inside-product-2.jpg",
+        cardImg: "assets/products/inside-product-2.jpg",
 
     },
     {
@@ -20,7 +20,7 @@ const productList = [
         name: "Echeveria",
         category: "interior",
         cost: 7,
-        cardImg: "./assets/products/inside-product-3.jpg",
+        cardImg: "assets/products/inside-product-3.jpg",
 
     },
     {
@@ -28,7 +28,7 @@ const productList = [
         name: "Tradescantia zebrina",
         category: "exterior",
         cost: 8,
-        cardImg: "./assets/products/outside-product-1.jpg",
+        cardImg: "assets/products/outside-product-1.jpg",
 
     },
     {
@@ -36,7 +36,7 @@ const productList = [
         name: "Pelargonium crispum",
         category: "exterior",
         cost: 10,
-        cardImg: "./assets/products/outside-product-2.jpg",
+        cardImg: "assets/products/outside-product-2.jpg",
 
     },
     {
@@ -44,7 +44,7 @@ const productList = [
         name: "Tagetes erecta",
         category: "pet-friendly",
         cost: 9.50,
-        cardImg: "./assets/products/pet-friendly-product-1.jpg",
+        cardImg: "assets/products/pet-friendly-product-1.jpg",
 
     },
     {
@@ -52,7 +52,7 @@ const productList = [
         name: "Aster",
         category: "pet-friendly",
         cost: 9.50,
-        cardImg: "./assets/products/pet-friendly-product-2.jpg",
+        cardImg: "assets/products/pet-friendly-product-2.jpg",
 
     },
     {
@@ -60,7 +60,7 @@ const productList = [
         name: "Callistephus",
         category: "pet-friendly",
         cost: 9.50,
-        cardImg: "./assets/products/pet-friendly-product-3.jpg",
+        cardImg: "assets/products/pet-friendly-product-3.jpg",
 
     },
 
