@@ -75,7 +75,7 @@
   }
 }
 
-/* Smartphone */
+/* Smartphone's */
 @media (max-width: 576px) {
   .main__hero__presentation {
     display: flex;
@@ -85,5 +85,30 @@
   footer {
     display: flex;
     justify-content: center;
+    padding: 80px 0px;
+  }
+}
+
+@media (max-width: 375px) {
+  .main__hero__presentation {
+    text-align: center;
+    font-size: 26px;
+  }
+
+  #main__plant__products {
+    display: flex;
+    align-items: center;
+  }
+
+  .main__plant__container {
+    display: flex;
+    max-width: 300px;
+  }
+
+  .footer__container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    max-width: 350px;
   }
 }
