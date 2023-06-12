@@ -43,8 +43,10 @@
   }
 
   .card__container {
-    min-width: 350px;
+    min-width: 100%;
+    padding: 20px 20px;
   }
+
   .main__plant__container {
     display: flex;
     flex-wrap: wrap;
