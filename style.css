@@ -323,6 +323,7 @@ h5 {
 
 .main__plant__container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 30px;
@@ -425,8 +426,11 @@ main {
 #main__about {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 36px 0px;
   background-color: var(--color-1);
+  gap: 40px;
 }
 
 .main__about__us {
@@ -442,24 +446,23 @@ main {
   font-size: 32px;
 }
 
-.about__us__p1 {
-  padding: 12px 24px;
-  text-align: center;
-  font-size: 18px;
-  max-width: 35%;
-  background-color: var(--color-2);
-  box-shadow: var(--shadow-elevation-medium);
-  border-radius: 5px;
-}
-
+.about__us__p1,
 .about__us__p2 {
   padding: 12px 24px;
   text-align: center;
   font-size: 20px;
   max-width: 50%;
+  border-radius: 5px;
+}
+
+.about__us__p1 {
+  background-color: var(--color-2);
+  box-shadow: var(--shadow-elevation-medium);
+}
+
+.about__us__p2 {
   background-color: var(--color-3);
   box-shadow: var(--shadow-elevation-medium);
-  border-radius: 5px;
 }
 
 .about__us__p2 span {
@@ -469,9 +472,8 @@ main {
 }
 
 .img-sierras {
-  max-height: 80%;
+  max-height: 100%;
   max-width: 50%;
-  margin: 0px 40px;
   border-radius: 10px;
   box-shadow: var(--shadow-elevation-high);
 }
@@ -482,6 +484,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  gap: 30px;
+  padding: 0px 10px;
   background-color: var(--color-4);
 }
 
@@ -532,10 +536,10 @@ textarea {
 footer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   background-color: var(--color-5);
   color: var(--color-1);
-  padding: 80px 250px;
+  padding: 100px 40px;
 }
 
 .footer__container {

@@ -52,8 +52,8 @@
 
   #main__about {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    flex-direction: column;
     gap: 30px;
     padding: 20px 0px;
   }
@@ -81,17 +81,6 @@
   .main__hero__presentation {
     display: flex;
     align-items: center;
-  }
-
-  footer {
-    display: flex;
-    justify-content: center;
-    padding: 80px 0px;
-  }
-}
-
-@media (max-width: 375px) {
-  .main__hero__presentation {
     text-align: center;
     font-size: 26px;
   }
@@ -101,9 +90,38 @@
     align-items: center;
   }
 
+  .categories {
+    display: grid;
+  }
+
   .main__plant__container {
     display: flex;
-    max-width: 300px;
+    max-width: 90%;
+  }
+
+  .main__find__card {
+    padding: 16px 8px;
+  }
+
+  #main__about {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about__us__p1,
+  .about__us__p2 {
+    padding: 5px 10px;
+    max-width: 90%;
+  }
+
+  .img-sierras {
+    max-width: 85%;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    padding: 80px 0px;
   }
 
   .footer__container {
