@@ -8,6 +8,7 @@
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 :root {
@@ -193,6 +194,9 @@
   min-width: 375px;
   transform: translate(200%);
   transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+}
+
+.cart[data-carrito='carrito'] {
 }
 .cart::-webkit-scrollbar {
   display: none;
